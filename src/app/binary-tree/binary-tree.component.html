@@ -1,0 +1,19 @@
+<mat-card>
+  <div>
+    <div><h3>Binary Search Tree</h3></div>
+    <div>
+      <p>1. Insert</p>
+      <input type="text" #insertVaule />
+      <button (click)="insert(insertVaule.value)">Insert</button>
+    </div>
+    <div>
+        <p>2. Find</p>
+        <input type="text" #findVaule />
+        <button (click)="find(findVaule.value)">Find</button>
+      </div>
+  </div>
+  <div>
+    <p>3. Breadth First Search</p>
+    <button (click)="breadthFirstSearch()">BFS</button>
+  </div>
+</mat-card>

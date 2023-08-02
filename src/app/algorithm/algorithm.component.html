@@ -1,0 +1,43 @@
+<mat-card>
+  <div>
+    <div><h3>Searching Algorithms</h3></div>
+    <div>
+      <p>1. Linear Search</p>
+      <p>[1, 45, 123, 4, 54, 4, 6, 565, 65, 46, 65]</p>
+      <input type="text" #linearSearch />
+      <button (click)="linearSearch(linearSearch.value)">Linear Search</button>
+    </div>
+    <div>
+      <p>2. Binary Search for sorted array</p>
+      <p>[1, 7, 12, 14, 34, 41, 46, 56, 65]</p>
+      <input type="text" #binarySearch />
+      <button (click)="binarySearch(binarySearch.value)">Binary Search</button>
+    </div>
+    <div>
+      <p>3. naive string search</p>
+      <p>Today is Ha Ha day, very funny Ha Ha</p>
+      <input type="text" #inputString />
+      <button (click)="naiveStringSearch(inputString.value)">
+        Naive string Search
+      </button>
+    </div>
+    <div><h3>Sorting Algorithms</h3></div>
+    <p>Array: [1, 45, 123, 4, 54, 4, 6, 565, 65, 46, 65]</p>
+    <div>
+      <p>4. Bubble sort</p>
+      <button (click)="bubbleSort()">Bubble Sort</button>
+    </div>
+    <div>
+      <p>5. selection sort</p>
+      <button (click)="selectionSort()">selection Sort</button>
+    </div>
+    <div>
+      <p>5. insertion sort</p>
+      <button (click)="insertionSort()">insertion Sort</button>
+    </div>
+    <div>
+      <p>6. merge sort</p>
+      <button (click)="mergeSortcall()">merge Sort</button>
+    </div>
+  </div>
+</mat-card>

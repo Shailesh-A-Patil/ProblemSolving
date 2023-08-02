@@ -1,0 +1,62 @@
+<mat-card>
+<div>
+  <div><h3>LinkedList</h3></div>
+  <div>
+    <p>1. Push</p>
+    <input type="text" #pushVaule />
+    <button (click)="linkedlistpush(pushVaule.value)">Push</button>
+  </div>
+  <div>
+    <p>2. Pop</p>
+    <button (click)="linkedlistpop()">Pop</button>
+  </div>
+  <div>
+    <p>3. Shift</p>
+    <button (click)="linkedlistshift()">Shift</button>
+  </div>
+  <div>
+    <p>4. Unshift</p>
+    <input type="text" #unshiftVaule />
+    <button (click)="linkedlistunshift(unshiftVaule.value)">Unshift</button>
+  </div>
+  <div>
+    <p>5. Get</p>
+    <input type="text" #index />
+    <button (click)="linkedlistget(index.value)">Get</button>
+  </div>
+  <div>
+    <p>6. Set</p>
+    <label>enter value </label>
+    <input type="text" #getValue><br>
+    <label>enter index </label>
+    <input type="text" #getindex />
+    <button (click)="linkedlistset(getValue.value,getindex.value)">Set</button>
+  </div>
+  <div>
+    <p>7. Insert</p>
+    <label>enter value </label>
+    <input type="text" #insertValue><br>
+    <label>enter index </label>
+    <input type="text" #atindex />
+    <button (click)="linkedListInsert(insertValue.value,atindex.value)">Insert</button>
+  </div>
+  <div>
+    <p>8. Remove</p>
+    <label>enter index </label>
+    <input type="text" #removeatindex />
+    <button (click)="linkedListRemove(removeatindex.value)">Remove</button>
+  </div>
+  <div>
+    <p>9. Reverse</p> 
+    <button (click)="reverseLinkedList()"> Reverse</button>
+  </div>
+  <div>
+    <p>10. Find middle of LinkedList</p> 
+    <button (click)="middleLinkedList()"> middle</button>
+  </div>
+  <div>
+    <p>11. Detect loop and print LinkedList</p> 
+    <button (click)="detectcyclePrint()"> loop detection</button>
+  </div>
+</div>
+</mat-card>
